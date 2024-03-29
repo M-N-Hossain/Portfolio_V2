@@ -8,7 +8,9 @@ import java from "./assets/tech/java.png";
 import spring from "./assets/tech/spring.png";
 import sqlite from "./assets/tech/sqlite.png";
 import mysql from "./assets/tech/mysql.png";
+import mongodb from "./assets/tech/mongodb.png";
 import nodejs from "./assets/tech/nodejs.png";
+import express from "./assets/tech/express.png";
 import reactjs from "./assets/tech/reactjs.png";
 import reactNative from "./assets/tech/reactNative.png";
 import redux from "./assets/tech/redux.png";
@@ -35,22 +37,6 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "HTML",
-    icon: html,
-  },
-  {
-    name: "CSS",
-    icon: css,
-  },
-  {
-    name: "Spring Boot",
-    icon: spring,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
@@ -59,8 +45,28 @@ const technologies = [
     icon: reactNative,
   },
   {
+    name: "Spring Boot",
+    icon: spring,
+  },
+  {
+    name: "Express JS",
+    icon: express,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
+  },
+  {
+    name: "HTML",
+    icon: html,
+  },
+  {
+    name: "CSS",
+    icon: css,
   },
   {
     name: "Tailwind CSS",
@@ -70,6 +76,11 @@ const technologies = [
     name: "MySQL",
     icon: mysql,
   },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+
   {
     name: "SQLite",
     icon: sqlite,
