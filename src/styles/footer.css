@@ -25,6 +25,10 @@
 
 @media (max-width: 480px) {
 
+    .footer{
+        margin-top: 5%;
+    }
+
     .footer p{
         font-size: 0.8rem;
     }

@@ -54,9 +54,11 @@
 }
 
 @media (max-width: 480px) {
+    .contact{
+        margin-top: 25%;
+    }
     .contactDetails{
         flex-direction: column;
-        /* justify-content: space-around; */
     }
     .contactDetails .details{
         margin-left: 5%;

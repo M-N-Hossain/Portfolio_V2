@@ -143,6 +143,28 @@ const projects = [
     source_code_link: "https://github.com/M-N-Hossain/Documentation",
   },
   {
+    name: "Tour&Travel",
+    description:
+      "It is a fun project while learning about react. It potrays my ability and understanding of React and its core concepts.",
+    techs: [
+      {
+        name: "JavaScript",
+        color: "pink",
+      },
+      {
+        name: "React JS",
+        color: "blue",
+      },
+      {
+        name: "Css",
+        color: "pink",
+      },
+    ],
+    image: TourTravel,
+    wesite_link: "https://transcendent-gaufre-609435.netlify.app/",
+    source_code_link: "https://github.com/M-N-Hossain/tour-travelproject",
+  },
+  {
     name: "Grocery Shop",
     description:
       "This was a 24-hour exam project and it allows users to organize the list product, view the entire inventory, " +
@@ -174,28 +196,6 @@ const projects = [
     wesite_link: "",
     source_code_link:
       "https://github.com/M-N-Hossain/GroceryDeliverySystemFrontend.git",
-  },
-  {
-    name: "Tour&Travel",
-    description:
-      "It is a fun project while learning about react. It potrays my ability and understanding of React and its core concepts.",
-    techs: [
-      {
-        name: "JavaScript",
-        color: "pink",
-      },
-      {
-        name: "React JS",
-        color: "blue",
-      },
-      {
-        name: "Css",
-        color: "pink",
-      },
-    ],
-    image: TourTravel,
-    wesite_link: "https://transcendent-gaufre-609435.netlify.app/",
-    source_code_link: "https://github.com/M-N-Hossain/tour-travelproject",
   },
 ];
 
