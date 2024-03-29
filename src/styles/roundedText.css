@@ -1,0 +1,55 @@
+.circle{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 42%;
+    top: 85px;
+    background-color: white;
+   
+}
+
+.circle p{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: anim 10s linear infinite;
+}
+
+@keyframes anim {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.circle span{
+    position: absolute;
+    font-size: 1.1rem;
+    left: 50%;
+    transform-origin: 0 80px;
+}
+
+.circle img{
+    height: 100px;
+    width: 100px;
+}
+
+@media (max-width: 480px){
+    .circle{
+        left: 5%;
+        top: 40px;
+    }
+    .circle img{
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        top: 40px;
+    }
+}

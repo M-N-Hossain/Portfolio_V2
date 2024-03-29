@@ -1,0 +1,68 @@
+.aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 25%;
+    margin-bottom: 20%;
+
+}
+
+.imgContainer{
+    background-image: url("../assets/AboutMe.jpg");
+    background-size: cover;
+    height: 280px;
+    width: 30%;
+    position: relative;
+    border-radius: 5px;
+    left: 6%;
+}
+
+.infoContainer{
+    width: 35%;
+    position: relative;
+    margin-left: 6%;
+    border-radius: 5px;
+    left: 6%;
+
+}
+
+.infoContainer .firstText{
+    color: blue;
+    position: relative;
+    bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.infoContainer h3{
+    position: relative;
+    font-size: 1.5rem;
+    bottom: 0.7rem;
+    font-weight: bolder;
+}
+
+.infoContainer .secText{
+    color:  rgb(94, 94, 94);
+    font-size: 1.1rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+@media (max-width: 480px) {
+    .aboutMe{
+        /* display: inline; */
+        flex-direction: column;
+        /* align-items: first baseline; */
+        /* justify-content: start; */
+    }
+
+    .imgContainer{
+        height: 150px;
+        width: 50%;
+    }
+    .infoContainer{
+        margin-top: 10%;
+        width: 86%;
+    }
+}

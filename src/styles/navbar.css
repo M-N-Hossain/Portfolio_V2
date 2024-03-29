@@ -1,0 +1,47 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.name{
+    position: relative;
+    left: 5%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.links {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in;
+    margin-right: -6rem;
+    cursor: pointer;
+    
+}
+
+.links a.active{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.links a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}

@@ -1,0 +1,62 @@
+.heroSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    top: 7rem;
+}
+
+.myInfo {
+    width: 50%;
+    position: relative;
+    left: 8%;
+    bottom: 65px;
+}
+
+.myInfo .firstText {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: gray;
+}
+
+.myInfo h1{
+    font-size: 3rem;
+}
+
+.myInfo .secText{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.myInfo .icons {
+    position: relative;
+    top: 20px;
+}
+
+.myInfo .icons a{
+    color: unset;
+}
+
+.infoSnippet {
+    width: 50%;
+    height: 550px;
+    background-image: url(../assets/CodeSnippet.png);
+    background-size: cover;
+    position: relative;
+    /* right: 5%; */
+    top: 10px;
+}
+
+@media (max-width: 480px) {
+    .infoSnippet{
+        visibility: hidden;
+        position: absolute;
+    }
+    .myInfo{
+        width: 100%;
+        margin-top: 8%;
+    }
+    
+}
