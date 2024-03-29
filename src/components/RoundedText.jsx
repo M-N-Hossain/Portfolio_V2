@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/roundedText.css";
 
+import workingOnlaptop from "../assets/workingOnLaptop.jpg";
+
 export default function RoundedText() {
   const text = " SOFTWARE - DEVELOPER - WEB - DEVELOPER";
 
@@ -18,7 +20,7 @@ export default function RoundedText() {
           </span>
         ))}
       </p>
-      <img src="..\assets\workingOnLaptop.jpg" alt="" />
+      <img src={workingOnlaptop} alt="" />
     </div>
   );
 }

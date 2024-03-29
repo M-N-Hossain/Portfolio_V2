@@ -1,7 +1,97 @@
+import github from "./assets/tech/github.png";
+import css from "./assets/tech/css.png";
+import docker from "./assets/tech/docker.png";
+import html from "./assets/tech/html.png";
+import javascript from "./assets/tech/javascript.png";
+import typescript from "./assets/tech/typescript.png";
+import java from "./assets/tech/java.png";
+import spring from "./assets/tech/spring.png";
+import sqlite from "./assets/tech/sqlite.png";
+import mysql from "./assets/tech/mysql.png";
+import nodejs from "./assets/tech/nodejs.png";
+import reactjs from "./assets/tech/reactjs.png";
+import reactNative from "./assets/tech/reactNative.png";
+import redux from "./assets/tech/redux.png";
+import tailwind from "./assets/tech/tailwind.png";
+import aws from "./assets/tech/aws.png";
+import azure from "./assets/tech/azure.png";
+
 import klimakampen from "./assets/company/klimakampen.png";
-import TourTravel from "../src/assets/TourTravel.png";
-import documentationWebsite from "../src/assets/documentationWebsite.png";
-import groceryShop from "../src/assets/groceryShop.png";
+import TourTravel from "./assets/TourTravel.png";
+import documentationWebsite from "./assets/documentationWebsite.png";
+import groceryShop from "./assets/groceryShop.png";
+
+const technologies = [
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "HTML",
+    icon: html,
+  },
+  {
+    name: "CSS",
+    icon: css,
+  },
+  {
+    name: "Spring Boot",
+    icon: spring,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "React-Native",
+    icon: reactNative,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
+    name: "SQLite",
+    icon: sqlite,
+  },
+
+  {
+    name: "GitHub",
+    icon: github,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "Azure",
+    icon: azure,
+  },
+  {
+    name: "AWS",
+    icon: aws,
+  },
+];
 
 const experiences = [
   {
@@ -109,4 +199,4 @@ const projects = [
   },
 ];
 
-export { experiences, projects };
+export { experiences, projects, technologies };
