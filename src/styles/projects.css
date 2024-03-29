@@ -95,12 +95,12 @@ img{
     }
     .project{
         flex-direction: column;
-        margin-bottom: 5%;
+        margin-bottom: -30%;
 
     }
     .projectReverse{
         flex-direction: column;
-        margin-bottom: 5%;
+        margin-bottom: -30%;
     }
     .websiteImg{
         width: 100%;

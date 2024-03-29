@@ -74,7 +74,8 @@ nav{
     .burgerMenuIcons{
         display: block;
         cursor: pointer;
-        margin-right: 2%;
+        position: relative;
+        right: 10%;
     }
     .burgerMenuIcons i{
         font-size: 1.2rem;

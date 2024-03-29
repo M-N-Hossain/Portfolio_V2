@@ -54,7 +54,7 @@
 
 @media (max-width: 480px){
     .skills{
-        margin-left: 5%;
+        /* margin-left: 5%; */
     }
     .tech{
         width: 46%;

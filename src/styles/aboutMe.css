@@ -51,18 +51,23 @@
 
 @media (max-width: 480px) {
     .aboutMe{
-        /* display: inline; */
         flex-direction: column;
-        /* align-items: first baseline; */
-        /* justify-content: start; */
+        position: relative;
+        right: 5%;
     }
 
     .imgContainer{
         height: 150px;
         width: 50%;
+        align-self: center;
     }
     .infoContainer{
         margin-top: 10%;
-        width: 86%;
+        width: 85%;
+        position: relative;
+        left: 2%;
+    }
+    .infoContainer h3{
+        font-size: 1.3rem;
     }
 }

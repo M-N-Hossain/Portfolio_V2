@@ -11,13 +11,13 @@ export default function Footer() {
       </div>
       <div className="icons">
         <a href="https://github.com/M-N-Hossain" target="blank">
-          <GitHubIcon style={{ fontSize: 35, marginRight: "5px" }} />
+          <GitHubIcon className="icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/md-nayeem-hossain-86702921b/"
           target="blank"
         >
-          <LinkedInIcon style={{ fontSize: 35, marginRight: "5px" }} />
+          <LinkedInIcon className="icon" />
         </a>
       </div>
     </div>

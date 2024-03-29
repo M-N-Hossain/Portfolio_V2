@@ -17,3 +17,21 @@
 .footer a{
     color: unset;
 }
+
+.footer .icon{
+    font-size: 35px;
+    margin-right: 5px;
+}
+
+@media (max-width: 480px) {
+
+    .footer p{
+        font-size: 0.8rem;
+    }
+
+    .footer .icon{
+        font-size: 30px;
+        margin-right: 5px;
+    }
+
+}
