@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/navbar.css";
 
 import { Link } from "react-scroll";
 
 export default function Navbar() {
+  const [isMenuIconShowing, setIsMenuIconShowing] = useState(false);
+
   return (
     <nav>
       <a href="#heroSection" className="name">
         Md Nayeem Hossain
       </a>
-      <div className="links">
+      <div
+        className="burgerMenuIcons"
+        onClick={() => {
+          setIsMenuIconShowing(!isMenuIconShowing);
+        }}
+      >
+        <i className={isMenuIconShowing ? "fas fa-times" : "fas fa-bars"}></i>
+      </div>
+
+      <div className={isMenuIconShowing ? "links active" : "links"}>
         <Link
           activeClass="active"
           to="heroSection"
