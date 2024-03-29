@@ -53,8 +53,8 @@
 }
 
 @media (max-width: 480px){
-    .skills{
-        /* margin-left: 5%; */
+    .techStack{
+        width: 85%;
     }
     .tech{
         width: 46%;

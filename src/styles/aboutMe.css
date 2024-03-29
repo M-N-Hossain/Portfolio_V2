@@ -57,9 +57,9 @@
     }
 
     .imgContainer{
-        height: 150px;
-        width: 50%;
-        align-self: center;
+        height: 170px;
+        width: 70%;
+        position: relative;
     }
     .infoContainer{
         margin-top: 10%;

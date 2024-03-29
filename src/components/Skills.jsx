@@ -11,8 +11,8 @@ export default function Skills() {
       <p className="text">The skills, tools and technologies</p>
       <p className="text">I am really good at:</p>
       <div className="techStack">
-        {technologies.map((technology) => (
-          <Tech imgUrl={technology.icon} name={technology.name} />
+        {technologies.map((technology, index) => (
+          <Tech key={index} imgUrl={technology.icon} name={technology.name} />
         ))}
       </div>
     </div>
