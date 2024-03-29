@@ -18,7 +18,7 @@ export default function RoundedText() {
           </span>
         ))}
       </p>
-      <img src="src\assets\workingOnLaptop.jpg" alt="" />
+      <img src="..\assets\workingOnLaptop.jpg" alt="" />
     </div>
   );
 }
