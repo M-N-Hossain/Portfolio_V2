@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className="footer" id="footer">
       <div className="copywright">
-        <p>Copywright© 2024. All rights are reserved.</p>
+        <p>Copyright© 2024. All rights are reserved.</p>
       </div>
       <div className="icons">
         <a href="https://github.com/M-N-Hossain" target="blank">
