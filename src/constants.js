@@ -110,7 +110,7 @@ const experiences = [
     company_name: "Klimakampen ApS",
     icon: klimakampen,
     iconBg: "#383E56",
-    date: "August 2023 - Januaey 2024",
+    date: "August 2023 - January 2024",
 
     points: [
       "Enhancing the user experience of the Klimakampen cross-platform app by implementing a variety of user-centered design principles and conducting extensive user testing.",
