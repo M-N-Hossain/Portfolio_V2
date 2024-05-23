@@ -9,7 +9,6 @@
     right: 42%;
     top: 85px;
     background-color: white;
-   
 }
 
 .circle p{
@@ -44,12 +43,12 @@
 @media (max-width: 480px){
     .circle{
         left: 5%;
-        top: 40px;
+        top: 5px;
     }
     .circle img{
         height: 80px;
         width: 80px;
         position: absolute;
-        top: 40px;
+        top: 35px;
     }
 }

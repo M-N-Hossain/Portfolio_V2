@@ -5,7 +5,6 @@
     position: relative;
     margin-top: 25%;
     margin-bottom: 20%;
-
 }
 
 .imgContainer{
@@ -53,7 +52,7 @@
     .aboutMe{
         flex-direction: column;
         position: relative;
-        right: 5%;
+        right: 5%;        
     }
 
     .imgContainer{
@@ -66,6 +65,8 @@
         width: 85%;
         position: relative;
         left: 2%;
+        margin-bottom: 8%;
+
     }
     .infoContainer h3{
         font-size: 1.3rem;

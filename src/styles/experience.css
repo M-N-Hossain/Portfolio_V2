@@ -66,6 +66,9 @@
 }
 
 @media (max-width: 480px) {
+    .experience{
+        margin-bottom: 20%;
+    }
     .experienceList{
         width: 95%;
     }

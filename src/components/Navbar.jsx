@@ -6,16 +6,25 @@ import { Link } from "react-scroll";
 export default function Navbar() {
   const [isMenuIconShowing, setIsMenuIconShowing] = useState(false);
 
-  const burgerMenuHandler = () => {
-    setIsMenuIconShowing(!isMenuIconShowing);
+  const burgerMenuOpen = () => {
+    setIsMenuIconShowing(true);
   };
+
+  const burgerMenuClose = () => {
+    setIsMenuIconShowing(false);
+  };
+
+  console.log("Menu icon showing:", isMenuIconShowing);
 
   return (
     <nav>
       <a href="#heroSection" className="name">
         Md Nayeem Hossain
       </a>
-      <div className="burgerMenuIcons" onClick={burgerMenuHandler}>
+      <div
+        className="burgerMenuIcons"
+        onClick={isMenuIconShowing ? burgerMenuClose : burgerMenuOpen}
+      >
         <i className={isMenuIconShowing ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
 
@@ -26,7 +35,7 @@ export default function Navbar() {
           smooth={true}
           offset={-200}
           duration={100}
-          onClick={burgerMenuHandler}
+          onClick={burgerMenuClose}
         >
           Home
         </Link>
@@ -37,7 +46,7 @@ export default function Navbar() {
           smooth={true}
           offset={isMenuIconShowing ? -100 : -240}
           duration={100}
-          onClick={burgerMenuHandler}
+          onClick={burgerMenuClose}
         >
           About
         </Link>
@@ -48,7 +57,7 @@ export default function Navbar() {
           smooth={true}
           offset={-100}
           duration={100}
-          onClick={burgerMenuHandler}
+          onClick={burgerMenuClose}
         >
           Work
         </Link>
@@ -59,7 +68,7 @@ export default function Navbar() {
           smooth={true}
           offset={-120}
           duration={100}
-          onClick={burgerMenuHandler}
+          onClick={burgerMenuClose}
         >
           Skills
         </Link>
@@ -70,7 +79,7 @@ export default function Navbar() {
           smooth={true}
           offset={-120}
           duration={100}
-          onClick={burgerMenuHandler}
+          onClick={burgerMenuClose}
         >
           Projects
         </Link>
@@ -81,7 +90,7 @@ export default function Navbar() {
           smooth={true}
           offset={-200}
           duration={100}
-          onClick={burgerMenuHandler}
+          onClick={burgerMenuClose}
         >
           Contact
         </Link>
