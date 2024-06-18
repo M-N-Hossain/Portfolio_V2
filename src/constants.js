@@ -21,6 +21,7 @@ import azure from "./assets/tech/azure.png";
 import klimakampen from "./assets/company/klimakampen.png";
 import TourTravel from "./assets/TourTravel.png";
 import documentationWebsite from "./assets/documentationWebsite.png";
+import carrental from "./assets/carrental.png";
 import groceryShop from "./assets/groceryShop.png";
 
 const technologies = [
@@ -122,6 +123,29 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "Car Rental",
+    description:
+      "A car rental website is an online platform that allows users to rent cars for personal or business use." +
+      "The website provides an interface for searching, comparing and reserving cars. Its in under development ",
+      techs: [
+        {
+          name: "JavaScript",
+          color: "pink",
+        },
+        {
+          name: "React JS",
+          color: "blue",
+        },
+        {
+          name: "Css",
+          color: "pink",
+        },
+      ],
+    image: carrental,
+    wesite_link: "https://rentalfleet.netlify.app/",
+    source_code_link: "https://github.com/M-N-Hossain/CarRental",
+  },
   {
     name: "Documentation",
     description:
