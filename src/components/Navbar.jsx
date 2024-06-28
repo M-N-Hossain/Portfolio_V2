@@ -14,8 +14,6 @@ export default function Navbar() {
     setIsMenuIconShowing(false);
   };
 
-  console.log("Menu icon showing:", isMenuIconShowing);
-
   return (
     <nav>
       <a href="#heroSection" className="name">
