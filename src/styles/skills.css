@@ -11,10 +11,8 @@
 .skills .title{
     font-weight: bold;
     font-size: 1.1rem;
-    background-color: #F9FAFB;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    padding: 1rem 2rem;
+    color: blue;
+
 }
 
 .skills .text{

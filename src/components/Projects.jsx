@@ -44,7 +44,7 @@ const Project = ({ project, className }) => {
 export default function Projects() {
   return (
     <div className="projects" id="projects">
-      <p className="firstText">Projects</p>
+      <p className="firstText">PROJECTS.</p>
       <p className="secText">Each project is a unique piece of development.</p>
       {projects.map((project, index) => (
         <Project

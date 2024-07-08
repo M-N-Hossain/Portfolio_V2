@@ -7,7 +7,7 @@ export default function AboutME() {
     <div className="aboutMe" id="aboutMe">
       <div className="imgContainer"></div>
       <div className="infoContainer">
-        <p className="firstText">ABOUT ME</p>
+        <p className="firstText">ABOUT ME.</p>
         <h3>A dedicated programmer.</h3>
         <h3>Based in Copenhagen, Denmark 📍</h3>
         <p className="secText">
