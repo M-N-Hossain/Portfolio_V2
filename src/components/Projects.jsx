@@ -25,12 +25,12 @@ const Project = ({ project, className }) => {
           <span key={index}>#{tech.name}</span>
         ))}
         <div className="links">
-          <a href={project.source_code_link} target="blnk">
+          <a href={project.source_code_link} target="_blank">
             <span>Code</span>
             <GitHub />
           </a>
           {project.wesite_link && (
-            <a href={project.wesite_link} target="blank">
+            <a href={project.wesite_link} target="_blank">
               <span>Live Demo</span>
               <OpenInNewIcon />
             </a>
