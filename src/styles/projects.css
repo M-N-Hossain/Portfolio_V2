@@ -115,7 +115,7 @@ img{
         flex-direction: row;
         justify-content: space-around;
         padding-top: 0;
-        
+        background-color: transparent;
     }
     .websiteInfo .links a{
        width: auto;
