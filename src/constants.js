@@ -128,20 +128,20 @@ const projects = [
     description:
       "A car rental website is an online platform that allows users to rent cars for personal or business use." +
       "The website provides an interface for searching, comparing and reserving cars. Its in under development ",
-      techs: [
-        {
-          name: "JavaScript",
-          color: "pink",
-        },
-        {
-          name: "React JS",
-          color: "blue",
-        },
-        {
-          name: "Css",
-          color: "pink",
-        },
-      ],
+    techs: [
+      {
+        name: "JavaScript",
+        color: "pink",
+      },
+      {
+        name: "React JS",
+        color: "blue",
+      },
+      {
+        name: "Css",
+        color: "pink",
+      },
+    ],
     image: carrental,
     wesite_link: "https://rentalfleet.netlify.app/",
     source_code_link: "https://github.com/M-N-Hossain/CarRental",
@@ -149,8 +149,9 @@ const projects = [
   {
     name: "Documentation",
     description:
-      "This site showcasing Comprehensive resources for developers covering core features and detailed guidelines of Node js, designing RESTful APIs," +
-      "including best practices, endpoint documentation and terminal commands. ",
+      "This project is a comprehensive resource hub for developers, focusing on the core features and detailed guidelines of Node.js. " +
+      "It offers best practices for designing RESTful APIs, along with thorough endpoint documentation and terminal commands." +
+      "The website is built with a custom template engine to achieve server-side rendering using Node.js.\n NB: This website is not responsive",
     techs: [
       {
         name: "Html",
