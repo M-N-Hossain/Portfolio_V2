@@ -127,7 +127,7 @@ const projects = [
     name: "Car Rental",
     description:
       "A car rental website is an online platform that allows users to rent cars for personal or business use." +
-      "The website provides an interface for searching, comparing and reserving cars. Its in under development ",
+      "The website provides an interface for searching, comparing and reserving cars. Its in under development. ",
     techs: [
       {
         name: "JavaScript",
@@ -148,10 +148,10 @@ const projects = [
   },
   {
     name: "Documentation",
-    description:
-      "This project is a comprehensive resource hub for developers, focusing on the core features and detailed guidelines of Node.js. " +
-      "It offers best practices for designing RESTful APIs, along with thorough endpoint documentation and terminal commands." +
-      "The website is built with a custom template engine to achieve server-side rendering using Node.js.\n NB: This website is not responsive",
+    description: `This project is a comprehensive resource hub for developers, focusing on the core features and detailed guidelines of Node.js.
+    It offers best practices for designing RESTful APIs, along with thorough endpoint documentation and terminal commands. 
+    The website is built with a custom template engine to achieve server-side rendering using Node.js.
+    NB: This website is not responsive.`,
     techs: [
       {
         name: "Html",
@@ -204,7 +204,7 @@ const projects = [
     name: "Grocery Shop",
     description:
       "This was a 24-hour exam project and it allows users to organize the list product, view the entire inventory, " +
-      " place orders, and record delivery details and so on. With CRUD operations, administrators can efficiently manage the product database",
+      " place orders, and record delivery details and so on. With CRUD operations, administrators can efficiently manage the product database.",
 
     techs: [
       {
