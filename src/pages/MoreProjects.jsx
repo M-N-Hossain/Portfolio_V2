@@ -1,10 +1,15 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 import Project from "../components/Project";
 import { projects } from "../constants";
 import "../styles/projects.css";
-import Navbar from "../components/Navbar";
 
 export default function MoreProjects({ projectCategory }) {
+  const projectsToShow = projects.filter(
+    (project) =>
+      project.type.toLocaleLowerCase() === projectCategory.toLowerCase()
+  );
+
   return (
     <>
       <Navbar isAllProjectNotShowing={false} />
@@ -19,7 +24,7 @@ export default function MoreProjects({ projectCategory }) {
         <p className="secText">
           Each project is a unique piece of development.
         </p>
-        {projects.map((project, index) => (
+        {projectsToShow.map((project, index) => (
           <Project
             key={index}
             project={project}

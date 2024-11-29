@@ -21,12 +21,31 @@ export default function Projects({ isProjectShowing, handleProjectShowing }) {
     }
   }
 
+  const filteredProjects = projects.filter((project) => {
+    if (
+      project.name.toLocaleLowerCase() ===
+      "Real-time Weather Application".toLocaleLowerCase()
+    ) {
+      return project;
+    } else if (
+      project.name.toLocaleLowerCase() === "Documentation".toLocaleLowerCase()
+    ) {
+      return project;
+    } else if (
+      project.name.toLocaleLowerCase() === "Grocery Shop".toLocaleLowerCase()
+    ) {
+      return project;
+    } else {
+      return false;
+    }
+  });
+
   return (
     <div className="projects" id="projects">
       <p className="firstText">PROJECTS.</p>
       <p className="secText">Each project is a unique piece of development.</p>
 
-      {projects.map((project, index) => {
+      {filteredProjects.map((project, index) => {
         const category = selectProjects(index);
         return (
           <React.Fragment key={index}>

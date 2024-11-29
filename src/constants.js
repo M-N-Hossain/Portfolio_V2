@@ -151,6 +151,7 @@ const projects = [
     image: weatherApp,
     wesite_link: "https://real-time-weather-dashboard-ebon.vercel.app/",
     source_code_link: "https://github.com/M-N-Hossain/RealTimeWeatherDashboard",
+    type: "frontend",
   },
   {
     name: "Car Rental",
@@ -174,6 +175,7 @@ const projects = [
     image: carrental,
     wesite_link: "https://rentalfleet.netlify.app/",
     source_code_link: "https://github.com/M-N-Hossain/CarRental",
+    type: "frontend",
   },
   {
     name: "Documentation",
@@ -206,6 +208,7 @@ const projects = [
     image: documentationWebsite,
     wesite_link: "https://documentation-s655.onrender.com/",
     source_code_link: "https://github.com/M-N-Hossain/Documentation",
+    type: "backend",
   },
   {
     name: "Tour&Travel",
@@ -228,6 +231,7 @@ const projects = [
     image: TourTravel,
     wesite_link: "https://transcendent-gaufre-609435.netlify.app/",
     source_code_link: "https://github.com/M-N-Hossain/tour-travelproject",
+    type: "frontend",
   },
   {
     name: "Grocery Shop",
@@ -261,6 +265,7 @@ const projects = [
     wesite_link: "",
     source_code_link:
       "https://github.com/M-N-Hossain/GroceryDeliverySystemFrontend.git",
+    type: "full-stack",
   },
 ];
 
