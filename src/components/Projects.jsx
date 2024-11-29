@@ -28,7 +28,8 @@ export default function Projects({ isProjectShowing, handleProjectShowing }) {
     ) {
       return project;
     } else if (
-      project.name.toLocaleLowerCase() === "Documentation".toLocaleLowerCase()
+      project.name.toLocaleLowerCase() ===
+      "Uptime Monitoring API".toLocaleLowerCase()
     ) {
       return project;
     } else if (

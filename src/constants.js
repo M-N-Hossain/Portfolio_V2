@@ -23,6 +23,7 @@ import klimakampen from "./assets/company/klimakampen.png";
 import documentationWebsite from "./assets/documentationWebsite.png";
 import groceryShop from "./assets/groceryShop.png";
 import TourTravel from "./assets/TourTravel.png";
+import UptimeMonitorApi from "./assets/UptimeMonitorApi.webp";
 import weatherApp from "./assets/weatherApp.png";
 
 const technologies = [
@@ -233,6 +234,31 @@ const projects = [
     source_code_link: "https://github.com/M-N-Hossain/tour-travelproject",
     type: "frontend",
   },
+
+  {
+    name: "Uptime Monitoring API",
+    description: `This project implements an API to monitor user-defined checks for API uptime and sends mobile notifications via SMS when the status changes (up or down). 
+    Users can register and create API checks with properties like protocol, URL, method, and timeout. 
+    The system performs regular checks against specified endpoints, and when the status changes, an SMS is sent to the user.
+    The system uses Twilio for sending SMS notifications. It's built with Node.js without any frameworks.`,
+    techs: [
+      {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+
+      {
+        name: "Twilio",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: UptimeMonitorApi,
+    source_code_link:
+      "https://github.com/M-N-Hossain/UptimeMonitoringAPI_RawNode",
+    type: "backend",
+  },
+
+  // Full-Stcak
   {
     name: "Grocery Shop",
     description:
