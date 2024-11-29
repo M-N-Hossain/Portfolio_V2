@@ -8,7 +8,6 @@ import Navbar from "./Navbar";
 export default function Hero() {
   return (
     <div id="heroSection">
-      <Navbar />
       <div className="heroSection">
         <div className="myInfo">
           <p className="firstText">Hey...!</p>

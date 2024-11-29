@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import "../styles/navbar.css";
 
-import { Link } from "react-scroll";
-
-export default function Navbar() {
+export default function Navbar({ isAllProjectNotShowing }) {
   const [isMenuIconShowing, setIsMenuIconShowing] = useState(false);
+  const navigate = useNavigate();
 
   const burgerMenuOpen = () => {
     setIsMenuIconShowing(true);
@@ -16,83 +17,95 @@ export default function Navbar() {
 
   return (
     <nav>
-      <a href="#heroSection" className="name">
+      <a
+        onClick={() => {
+          console.log("first");
+          navigate("/");
+        }}
+        className="name"
+      >
         Md Nayeem Hossain
       </a>
-      <div
-        className="burgerMenuIcons"
-        onClick={isMenuIconShowing ? burgerMenuClose : burgerMenuOpen}
-      >
-        <i className={isMenuIconShowing ? "fas fa-times" : "fas fa-bars"}></i>
-      </div>
+      {isAllProjectNotShowing && (
+        <>
+          <div
+            className="burgerMenuIcons"
+            onClick={isMenuIconShowing ? burgerMenuClose : burgerMenuOpen}
+          >
+            <i
+              className={isMenuIconShowing ? "fas fa-times" : "fas fa-bars"}
+            ></i>
+          </div>
 
-      <div className={isMenuIconShowing ? "links active" : "links"}>
-        <Link
-          activeClass="active"
-          to="heroSection"
-          smooth={true}
-          offset={-200}
-          duration={100}
-          onClick={burgerMenuClose}
-        >
-          Home
-        </Link>
+          <div className={isMenuIconShowing ? "links active" : "links"}>
+            <ScrollLink
+              activeClass="active"
+              to="heroSection"
+              smooth={true}
+              offset={-200}
+              duration={100}
+              onClick={burgerMenuClose}
+            >
+              Home
+            </ScrollLink>
 
-        <Link
-          activeClass="active"
-          to="aboutMe"
-          smooth={true}
-          offset={isMenuIconShowing ? -100 : -240}
-          duration={100}
-          onClick={burgerMenuClose}
-        >
-          About
-        </Link>
+            <ScrollLink
+              activeClass="active"
+              to="aboutMe"
+              smooth={true}
+              offset={isMenuIconShowing ? -100 : -240}
+              duration={100}
+              onClick={burgerMenuClose}
+            >
+              About
+            </ScrollLink>
 
-        <Link
-          activeClass="active"
-          to="experience"
-          smooth={true}
-          offset={-100}
-          duration={100}
-          onClick={burgerMenuClose}
-        >
-          Work
-        </Link>
+            <ScrollLink
+              activeClass="active"
+              to="experience"
+              smooth={true}
+              offset={-100}
+              duration={100}
+              onClick={burgerMenuClose}
+            >
+              Work
+            </ScrollLink>
 
-        <Link
-          activeClass="active"
-          to="skills"
-          smooth={true}
-          offset={-120}
-          duration={100}
-          onClick={burgerMenuClose}
-        >
-          Skills
-        </Link>
+            <ScrollLink
+              activeClass="active"
+              to="projects"
+              smooth={true}
+              offset={-120}
+              duration={100}
+              onClick={burgerMenuClose}
+            >
+              Projects
+            </ScrollLink>
 
-        <Link
-          activeClass="active"
-          to="projects"
-          smooth={true}
-          offset={-120}
-          duration={100}
-          onClick={burgerMenuClose}
-        >
-          Projects
-        </Link>
+            <ScrollLink
+              activeClass="active"
+              to="skills"
+              smooth={true}
+              offset={-120}
+              duration={100}
+              onClick={burgerMenuClose}
+            >
+              Skills
+            </ScrollLink>
 
-        <Link
-          activeClass="active"
-          to="contact"
-          smooth={true}
-          offset={-200}
-          duration={100}
-          onClick={burgerMenuClose}
-        >
-          Contact
-        </Link>
-      </div>
+            <ScrollLink
+              activeClass="active"
+              to="contact"
+              smooth={true}
+              offset={-200}
+              duration={100}
+              onClick={burgerMenuClose}
+            >
+              Contact
+            </ScrollLink>
+          </div>
+        </>
+      )}
     </nav>
   );
 }

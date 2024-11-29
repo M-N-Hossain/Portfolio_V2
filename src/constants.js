@@ -1,28 +1,29 @@
-import github from "./assets/tech/github.png";
+import aws from "./assets/tech/aws.png";
+import azure from "./assets/tech/azure.png";
 import css from "./assets/tech/css.png";
 import docker from "./assets/tech/docker.png";
-import html from "./assets/tech/html.png";
-import javascript from "./assets/tech/javascript.png";
-import typescript from "./assets/tech/typescript.png";
-import java from "./assets/tech/java.png";
-import spring from "./assets/tech/spring.png";
-import sqlite from "./assets/tech/sqlite.png";
-import mysql from "./assets/tech/mysql.png";
-import mongodb from "./assets/tech/mongodb.png";
-import nodejs from "./assets/tech/nodejs.png";
 import express from "./assets/tech/express.png";
+import github from "./assets/tech/github.png";
+import html from "./assets/tech/html.png";
+import java from "./assets/tech/java.png";
+import javascript from "./assets/tech/javascript.png";
+import mongodb from "./assets/tech/mongodb.png";
+import mysql from "./assets/tech/mysql.png";
+import nodejs from "./assets/tech/nodejs.png";
 import reactjs from "./assets/tech/reactjs.png";
 import reactNative from "./assets/tech/reactNative.png";
 import redux from "./assets/tech/redux.png";
+import spring from "./assets/tech/spring.png";
+import sqlite from "./assets/tech/sqlite.png";
 import tailwind from "./assets/tech/tailwind.png";
-import aws from "./assets/tech/aws.png";
-import azure from "./assets/tech/azure.png";
+import typescript from "./assets/tech/typescript.png";
 
-import klimakampen from "./assets/company/klimakampen.png";
-import TourTravel from "./assets/TourTravel.png";
-import documentationWebsite from "./assets/documentationWebsite.png";
 import carrental from "./assets/carrental.png";
+import klimakampen from "./assets/company/klimakampen.png";
+import documentationWebsite from "./assets/documentationWebsite.png";
 import groceryShop from "./assets/groceryShop.png";
+import TourTravel from "./assets/TourTravel.png";
+import weatherApp from "./assets/weatherApp.png";
 
 const technologies = [
   {
@@ -123,6 +124,34 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "Real-time Weather Application",
+    description: `A modern weather application that provides real-time weather updates for the user's current location. 
+    Users can search for specific locations, view detailed weather data, and save their favorite locations for quick access. 
+    Built with Vite and React, this app leverages custom hooks like useWeather for fetching data from OpenWeatherMap API, 
+    along with Context API and React hooks for state management and functionality.`,
+    techs: [
+      {
+        name: "Vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "OpenWeatherMap API",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: weatherApp,
+    wesite_link: "https://real-time-weather-dashboard-ebon.vercel.app/",
+    source_code_link: "https://github.com/M-N-Hossain/RealTimeWeatherDashboard",
+  },
   {
     name: "Car Rental",
     description:
