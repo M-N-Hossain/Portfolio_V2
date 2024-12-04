@@ -25,6 +25,7 @@ import groceryShop from "./assets/groceryShop.png";
 import TourTravel from "./assets/TourTravel.png";
 import UptimeMonitorApi from "./assets/UptimeMonitorApi.webp";
 import weatherApp from "./assets/weatherApp.png";
+import MyShop from "./assets/MyShop.png";
 
 const technologies = [
   {
@@ -234,7 +235,30 @@ const projects = [
     source_code_link: "https://github.com/M-N-Hossain/tour-travelproject",
     type: "frontend",
   },
-
+  {
+    name: "E-commerce Product Dashboard",
+    description: `A feature-rich e-commerce dashboard that allows users to browse, search, filter, and sort a variety of products seamlessly. 
+    The application provides an intuitive user experience with real-time search functionality powered by a custom useDebounce hook. 
+    Sorting options and category filters enhance product discovery, while a clean design built with Tailwind CSS ensures visual appeal. 
+    The app is highly modular, leveraging reusable components like ProductCard and Cart, with state management handled effectively using React hooks.`,
+    techs: [
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "blue-text-gradient",
+      },
+      
+    ],
+    image: MyShop, // Replace with the actual image variable or URL
+    wesite_link: "https://my-shop-ruby-mu.vercel.app/", 
+    source_code_link: "https://github.com/M-N-Hossain/myShop.git", // Replace with your GitHub repo link
+    type: "frontend",
+  },
+  
+  // backend
   {
     name: "Uptime Monitoring API",
     description: `This project implements an API to monitor user-defined checks for API uptime and sends mobile notifications via SMS when the status changes (up or down). 
