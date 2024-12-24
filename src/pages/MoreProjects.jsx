@@ -5,10 +5,12 @@ import { projects } from "../constants";
 import "../styles/projects.css";
 
 export default function MoreProjects({ projectCategory }) {
-  const projectsToShow = projects.filter(
-    (project) =>
-      project.type.toLocaleLowerCase() === projectCategory.toLowerCase()
-  );
+  const projectsToShow = projectCategory
+    ? projects.filter(
+        (project) =>
+          project.type.toLocaleLowerCase() === projectCategory.toLowerCase()
+      )
+    : projects;
 
   return (
     <>
