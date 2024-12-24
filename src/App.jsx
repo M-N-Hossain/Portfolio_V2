@@ -31,7 +31,7 @@ function App() {
     setProjectCategory(category);
   }
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top on route change
+    window.scrollTo(0, 0); 
   }, []);
   return (
     <div className="App">
