@@ -21,11 +21,12 @@ import typescript from "./assets/tech/typescript.png";
 import carrental from "./assets/carrental.png";
 import klimakampen from "./assets/company/klimakampen.png";
 import documentationWebsite from "./assets/documentationWebsite.png";
+import FaceHook from "./assets/FaceHook.png";
 import groceryShop from "./assets/groceryShop.png";
+import MyShop from "./assets/MyShop.png";
 import TourTravel from "./assets/TourTravel.png";
 import UptimeMonitorApi from "./assets/UptimeMonitorApi.webp";
 import weatherApp from "./assets/weatherApp.png";
-import MyShop from "./assets/MyShop.png";
 
 const technologies = [
   {
@@ -250,14 +251,13 @@ const projects = [
         name: "Tailwind CSS",
         color: "blue-text-gradient",
       },
-      
     ],
     image: MyShop, // Replace with the actual image variable or URL
-    wesite_link: "https://my-shop-ruby-mu.vercel.app/", 
+    wesite_link: "https://my-shop-ruby-mu.vercel.app/",
     source_code_link: "https://github.com/M-N-Hossain/myShop.git", // Replace with your GitHub repo link
     type: "frontend",
   },
-  
+
   // backend
   {
     name: "Uptime Monitoring API",
@@ -315,6 +315,40 @@ const projects = [
     wesite_link: "",
     source_code_link:
       "https://github.com/M-N-Hossain/GroceryDeliverySystemFrontend.git",
+    type: "full-stack",
+  },
+  {
+    name: "Facehook - Social Networking Platform",
+    description: `Facehook is a full-stack social networking platform that allows users to connect, share posts, and interact with others seamlessly. 
+    The application includes robust features like user authentication, real-time updates, and a dynamic search functionality. 
+    The front-end is built with a responsive design using React and Tailwind CSS, ensuring an engaging user experience. 
+    The back-end is powered by Node.js and Express, with MongoDB for scalable data management. 
+    The platform also implements JWT-based authentication for secure access, and RESTful APIs are utilized for efficient client-server communication.`,
+    techs: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "teal-text-gradient",
+      },
+    ],
+    image: FaceHook,
+    wesite_link: "https://face-hook-eta.vercel.app",
+    source_code_link: "https://github.com/M-N-Hossain/FaceHook",
     type: "full-stack",
   },
 ];
