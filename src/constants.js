@@ -24,6 +24,7 @@ import documentationWebsite from "./assets/documentationWebsite.png";
 import FaceHook from "./assets/FaceHook.png";
 import groceryShop from "./assets/groceryShop.png";
 import MyShop from "./assets/MyShop.png";
+import OnileLearningPlatformBackend from "./assets/OnileLearningPlatformBackend.webp";
 import TourTravel from "./assets/TourTravel.png";
 import UptimeMonitorApi from "./assets/UptimeMonitorApi.webp";
 import weatherApp from "./assets/weatherApp.png";
@@ -181,39 +182,6 @@ const projects = [
     type: "frontend",
   },
   {
-    name: "Documentation",
-    description: `This project is a comprehensive resource hub for developers, focusing on the core features and detailed guidelines of Node.js.
-    It offers best practices for designing RESTful APIs, along with thorough endpoint documentation and terminal commands. 
-    The website is built with a custom template engine to achieve server-side rendering using Node.js.
-    NB: This website is not responsive.`,
-    techs: [
-      {
-        name: "Html",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "Css",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Node.js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Express.js",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: documentationWebsite,
-    wesite_link: "https://documentation-s655.onrender.com/",
-    source_code_link: "https://github.com/M-N-Hossain/Documentation",
-    type: "backend",
-  },
-  {
     name: "Tour&Travel",
     description:
       "It is a fun project while learning about react. It potrays my ability and understanding of React and its core concepts.",
@@ -260,6 +228,39 @@ const projects = [
 
   // backend
   {
+    name: "Documentation",
+    description: `This project is a comprehensive resource hub for developers, focusing on the core features and detailed guidelines of Node.js.
+    It offers best practices for designing RESTful APIs, along with thorough endpoint documentation and terminal commands. 
+    The website is built with a custom template engine to achieve server-side rendering using Node.js.
+    NB: This website is not responsive.`,
+    techs: [
+      {
+        name: "Html",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Css",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Express.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: documentationWebsite,
+    wesite_link: "https://documentation-s655.onrender.com/",
+    source_code_link: "https://github.com/M-N-Hossain/Documentation",
+    type: "backend",
+  },
+  {
     name: "Uptime Monitoring API",
     description: `This project implements an API to monitor user-defined checks for API uptime and sends mobile notifications via SMS when the status changes (up or down). 
     Users can register and create API checks with properties like protocol, URL, method, and timeout. 
@@ -279,6 +280,34 @@ const projects = [
     image: UptimeMonitorApi,
     source_code_link:
       "https://github.com/M-N-Hossain/UptimeMonitoringAPI_RawNode",
+    type: "backend",
+  },
+  {
+    name: "Online Learning Platform API",
+    description: `This project implements a robust backend system for an online learning platform, designed
+     to facilitate seamless interaction between students, instructors, and administrators. It features secure
+      user authentication using JWT tokens and role-based access control, ensuring data integrity and appropriate permissions for
+       different user roles. The platform supports comprehensive course management, including the ability to create, update,
+        and delete courses, as well as track student enrollments. Students can easily enroll in courses, and the enrollment structure is
+         built to support future enhancements such as progress tracking and certifications. Leveraging a modular architecture, 
+         the system ensures scalability and maintainability. With DTO-based input validation, it guarantees consistent and reliable data 
+         handling, while API documentation via Swagger simplifies integration with frontend applications and external systems.`,
+    techs: [
+      {
+        name: "NestJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Swagger",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: OnileLearningPlatformBackend,
+    source_code_link: "https://github.com/M-N-Hossain/online-learning-platform",
     type: "backend",
   },
 

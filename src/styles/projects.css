@@ -31,7 +31,7 @@
     justify-content: space-between;
     width: 60%;
     position: relative;
-    margin-top: 6%;
+    margin-top: 10%;
 }
 .projectReverse{
     display: flex;
@@ -40,16 +40,22 @@
     justify-content: space-between;
     width: 60%;
     position: relative;
-    margin-top: 6%;
+    margin-top: 10%;
 }
 
 .websiteImg{
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 img{
     width: 100%;
     height: 250px;
     border-radius: 5px;
+    position: relative;
+    bottom: 45px;
 }
 
 .websiteInfo{
