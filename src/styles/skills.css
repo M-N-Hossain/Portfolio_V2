@@ -40,9 +40,11 @@
     margin: 0 4% 2% 0;
 }
 
-.tech img{
+.techStack .tech img{
     height: 30px;
     width: 35px;
+    position: relative;
+    bottom: 0;
 }
 
 .tech p{
