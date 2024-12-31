@@ -29,7 +29,7 @@ export default function Hero() {
           </p>
           <div className="icons">
             <a href="https://github.com/M-N-Hossain" target="blank">
-              <GitHubIcon style={{ fontSize: 35, marginRight: "5px" }} />
+              <GitHubIcon style={{ fontSize: 30, marginRight: "5px", marginBottom: "2px" }} />
             </a>
             <a
               href="https://www.linkedin.com/in/md-nayeem-hossain-86702921b/"
