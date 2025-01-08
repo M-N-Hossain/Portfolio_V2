@@ -9,6 +9,7 @@ import java from "./assets/tech/java.png";
 import javascript from "./assets/tech/javascript.png";
 import mongodb from "./assets/tech/mongodb.png";
 import mysql from "./assets/tech/mysql.png";
+import nestjs from "./assets/tech/nestjs.svg";
 import nodejs from "./assets/tech/nodejs.png";
 import reactjs from "./assets/tech/reactjs.png";
 import reactNative from "./assets/tech/reactNative.png";
@@ -61,6 +62,10 @@ const technologies = [
   {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "Nest JS",
+    icon: nestjs,
   },
   {
     name: "Redux Toolkit",
