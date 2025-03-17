@@ -156,8 +156,9 @@ const projects = [
       },
     ],
     image: LWSKitchen,
-    wesite_link: "https://real-time-weather-dashboard-ebon.vercel.app/",
-    source_code_link: "https://github.com/M-N-Hossain/RealTimeWeatherDashboard",
+    wesite_link: "https://lws-kitchen-next-js.vercel.app/",
+    // wesite_link: "https://real-time-weather-dashboard-ebon.vercel.app/",
+    source_code_link: "https://github.com/M-N-Hossain/lws-kitchen-NextJS",
     type: "frontend",
   },
   {
@@ -181,8 +182,8 @@ const projects = [
       },
     ],
     image: weatherApp,
-    wesite_link: "https://lws-kitchen-next-js.vercel.app/",
-    source_code_link: "https://github.com/M-N-Hossain/lws-kitchen-NextJS",
+    wesite_link: "https://real-time-weather-dashboard-ebon.vercel.app/",
+    source_code_link: "https://github.com/M-N-Hossain/RealTimeWeatherDashboard",
     type: "frontend",
   },
   {
