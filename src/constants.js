@@ -24,6 +24,7 @@ import klimakampen from "./assets/company/klimakampen.png";
 import documentationWebsite from "./assets/documentationWebsite.png";
 import FaceHook from "./assets/FaceHook.png";
 import groceryShop from "./assets/groceryShop.png";
+import LWSKitchen from "./assets/LWSKitchen.png";
 import MyShop from "./assets/MyShop.png";
 import OnileLearningPlatformBackend from "./assets/OnileLearningPlatformBackend.webp";
 import TourTravel from "./assets/TourTravel.png";
@@ -134,11 +135,8 @@ const experiences = [
 
 const projects = [
   {
-    name: "Real-time Weather Application",
-    description: `A modern weather application that provides real-time weather updates for the user's current location. 
-    Users can search for specific locations, view detailed weather data, and save their favorite locations for quick access. 
-    Built with Vite and React, this app leverages custom hooks like useWeather for fetching data from OpenWeatherMap API, 
-    along with Context API and React hooks for state management and functionality.`,
+    name: "LWS Kitchen – Food Blog & Recipe Platform",
+    description: `A modern recipe platform built with Next.js, featuring dynamic category and recipe management using custom JSON data. Includes homepage highlights (top-rated recipes, popular categories, curated collections), detailed recipe pages, and seamless navigation. Implemented modular components for categories and recipes, ensuring scalability and maintainability.`,
     techs: [
       {
         name: "Vite",
@@ -157,9 +155,34 @@ const projects = [
         color: "orange-text-gradient",
       },
     ],
-    image: weatherApp,
+    image: LWSKitchen,
     wesite_link: "https://real-time-weather-dashboard-ebon.vercel.app/",
     source_code_link: "https://github.com/M-N-Hossain/RealTimeWeatherDashboard",
+    type: "frontend",
+  },
+  {
+    name: "Real-time Weather Application",
+    description: `A modern weather application that provides real-time weather updates for the user's current location. 
+    Users can search for specific locations, view detailed weather data, and save their favorite locations for quick access. 
+    Built with Vite and React, this app leverages custom hooks like useWeather for fetching data from OpenWeatherMap API, 
+    along with Context API and React hooks for state management and functionality.`,
+    techs: [
+      {
+        name: "Next JS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React Js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: weatherApp,
+    wesite_link: "https://lws-kitchen-next-js.vercel.app/",
+    source_code_link: "https://github.com/M-N-Hossain/lws-kitchen-NextJS",
     type: "frontend",
   },
   {

@@ -24,7 +24,7 @@ export default function Projects({ isProjectShowing, handleProjectShowing }) {
   const filteredProjects = projects.filter((project) => {
     if (
       project.name.toLocaleLowerCase() ===
-      "Real-time Weather Application".toLocaleLowerCase()
+      "LWS Kitchen – Food Blog & Recipe Platform".toLocaleLowerCase()
     ) {
       return project;
     } else if (
