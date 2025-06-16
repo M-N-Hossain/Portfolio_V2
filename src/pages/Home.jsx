@@ -1,5 +1,6 @@
 import React from "react";
 import AboutME from "../components/AboutME";
+import Education from "../components/Education";
 import Experience from "../components/Experience";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
@@ -18,6 +19,7 @@ export default function Home({ handleProjectShowing }) {
       <Experience />
       <Projects handleProjectShowing={handleProjectShowing} />
       <Skills />
+      <Education />
     </div>
   );
 }

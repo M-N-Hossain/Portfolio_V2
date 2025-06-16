@@ -19,8 +19,13 @@ import sqlite from "./assets/tech/sqlite.png";
 import tailwind from "./assets/tech/tailwind.png";
 import typescript from "./assets/tech/typescript.png";
 
-import carrental from "./assets/carrental.png";
+import athme from "./assets/company/athme.jpeg";
 import klimakampen from "./assets/company/klimakampen.png";
+
+import CPHBusiness from "./assets/education/cphbusiness.png";
+import KEA from "./assets/education/kea.png";
+
+import carrental from "./assets/carrental.png";
 import documentationWebsite from "./assets/documentationWebsite.png";
 import FaceHook from "./assets/FaceHook.png";
 import groceryShop from "./assets/groceryShop.png";
@@ -118,12 +123,24 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Software Developer",
+    company_name: "Athme",
+    icon: athme,
+    iconBg: "#383E56",
+    date: "February 2025 - Present",
+    points: [
+      "Developed a full-stack mobile app for sports event creation and participation.",
+      "Built a real-time event management system with frontend-backend integration.",
+      "Improved UX through iterative user testing and feedback implementation.",
+      "Technologies: React Native, Expo, Node.js, MongoDB, Express.js.",
+    ],
+  },
+  {
     title: "Software Developer Intern",
     company_name: "Klimakampen ApS",
     icon: klimakampen,
     iconBg: "#383E56",
     date: "August 2023 - January 2024",
-
     points: [
       "Enhanced the user experience of the Klimakampen cross-platform app by implementing a variety of user-centered design principles and conducting extensive user testing.",
       "Developed and sustaining both the frontend (React Native) and backend (Node.js) components of the app, ensuring seamless integration and optimal performance.",
@@ -157,7 +174,6 @@ const projects = [
     ],
     image: LWSKitchen,
     wesite_link: "https://lws-kitchen-next-js.vercel.app/",
-    // wesite_link: "https://real-time-weather-dashboard-ebon.vercel.app/",
     source_code_link: "https://github.com/M-N-Hossain/lws-kitchen-NextJS",
     type: "frontend",
   },
@@ -411,4 +427,21 @@ const projects = [
   },
 ];
 
-export { experiences, projects, technologies };
+const education = [
+  {
+    title: "Bachelor's in Web Development",
+    school: "Copenhagen Business Academy",
+    date: "Aug 2024 – Jan 2026 (Expected)",
+    icon: CPHBusiness,
+    iconBg: "#e0f7fa",
+  },
+  {
+    title: "Associate Degree in Computer Science",
+    school: "Copenhagen School of Design and Technology – (KEA)",
+    date: "Aug 2021 – Jan 2024",
+    icon: KEA,
+    iconBg: "#f3e5f5",
+  },
+];
+
+export { education, experiences, projects, technologies };

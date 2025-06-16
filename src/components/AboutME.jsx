@@ -8,7 +8,7 @@ export default function AboutME() {
       <div className="imgContainer"></div>
       <div className="infoContainer">
         <p className="firstText">ABOUT ME.</p>
-        <h3>A dedicated programmer.</h3>
+        <h3>A dedicated full-stack developer.</h3>
         <h3>Based in Copenhagen, Denmark 📍</h3>
         <p className="secText">
           {/* I'm a determined Bangladeshi fellow following my dream to be an

@@ -1,9 +1,8 @@
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import "../styles/hero.css";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import Navbar from "./Navbar";
 
 export default function Hero() {
   return (
@@ -29,7 +28,13 @@ export default function Hero() {
           </p>
           <div className="icons">
             <a href="https://github.com/M-N-Hossain" target="blank">
-              <GitHubIcon style={{ fontSize: 30, marginRight: "5px", marginBottom: "2px" }} />
+              <GitHubIcon
+                style={{
+                  fontSize: 30,
+                  marginRight: "5px",
+                  marginBottom: "2px",
+                }}
+              />
             </a>
             <a
               href="https://www.linkedin.com/in/md-nayeem-hossain-86702921b/"
