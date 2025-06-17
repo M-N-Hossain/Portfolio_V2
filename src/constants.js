@@ -22,8 +22,8 @@ import typescript from "./assets/tech/typescript.png";
 import athme from "./assets/company/athme.jpeg";
 import klimakampen from "./assets/company/klimakampen.png";
 
-import CPHBusiness from "./assets/education/cphbusiness.png";
-import KEA from "./assets/education/kea.png";
+import cphbusiness from "./assets/education/cphbusiness.png";
+import kea from "./assets/education/kea.png";
 
 import carrental from "./assets/carrental.png";
 import documentationWebsite from "./assets/documentationWebsite.png";
@@ -127,7 +127,7 @@ const experiences = [
     company_name: "Athme",
     icon: athme,
     iconBg: "#383E56",
-    date: "February 2025 - Present",
+    date: "January 2025 - Present",
     points: [
       "Developed a full-stack mobile app for sports event creation and participation.",
       "Built a real-time event management system with frontend-backend integration.",
@@ -432,14 +432,14 @@ const education = [
     title: "Bachelor's in Web Development",
     school: "Copenhagen Business Academy",
     date: "Aug 2024 – Jan 2026 (Expected)",
-    icon: CPHBusiness,
+    icon: cphbusiness,
     iconBg: "#e0f7fa",
   },
   {
     title: "Associate Degree in Computer Science",
     school: "Copenhagen School of Design and Technology – (KEA)",
     date: "Aug 2021 – Jan 2024",
-    icon: KEA,
+    icon: kea,
     iconBg: "#f3e5f5",
   },
 ];
