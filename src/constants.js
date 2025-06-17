@@ -22,8 +22,8 @@ import typescript from "./assets/tech/typescript.png";
 import athme from "./assets/company/athme.jpeg";
 import klimakampen from "./assets/company/klimakampen.png";
 
-import cphbusiness from "./assets/education/cphbusiness.png";
-import kea from "./assets/education/kea.png";
+import cphbusiness from "./assets/education/CPHBusiness.png";
+import kea from "./assets/education/KEA.png";
 
 import carrental from "./assets/carrental.png";
 import documentationWebsite from "./assets/documentationWebsite.png";
