@@ -10,9 +10,8 @@ import "../styles/education.css";
 export default function Education() {
   return (
     <div className="education" id="education">
-      <p className="">My Academic Journey</p>
-
       <h2 className="">Education.</h2>
+
       <div className="educationList">
         <VerticalTimeline lineColor="#e6e5e5">
           {education.map((edu, index) => (
