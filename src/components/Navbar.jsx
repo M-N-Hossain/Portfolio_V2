@@ -1,11 +1,37 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import useIntersectionObserver from "../hooks/useIntersectionObserver";
+import useScrollManager from "../hooks/useScrollManager";
 import "../styles/navbar.css";
 
 export default function Navbar({ isAllProjectNotShowing }) {
   const [isMenuIconShowing, setIsMenuIconShowing] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const { scrollDirection, scrollToTop } = useScrollManager();
+
+  // Track active section for navigation highlighting (only on home page)
+  const sectionIds = [
+    "heroSection",
+    "aboutMe",
+    "experience",
+    "projects",
+    "skills",
+    "contact",
+  ];
+  const activeSection =
+    location.pathname === "/" && !isScrolling
+      ? useIntersectionObserver(sectionIds)
+      : "";
+
+  // Debug logging (remove in production)
+  useEffect(() => {
+    if (location.pathname === "/" && activeSection) {
+      console.log("Active section:", activeSection);
+    }
+  }, [activeSection, location.pathname]);
 
   const burgerMenuOpen = () => {
     setIsMenuIconShowing(true);
@@ -15,15 +41,50 @@ export default function Navbar({ isAllProjectNotShowing }) {
     setIsMenuIconShowing(false);
   };
 
+  // Handle scroll animation state
+  const handleScrollStart = () => {
+    setIsScrolling(true);
+  };
+
+  const handleScrollEnd = () => {
+    setTimeout(() => {
+      setIsScrolling(false);
+    }, 600); // Wait for scroll animation to complete
+  };
+
+  // Memoize nav link props to prevent unnecessary re-renders
+  const navLinkProps = {
+    smooth: true,
+    offset: -80,
+    duration: 500,
+    spy: true,
+    hashSpy: true,
+    onClick: (e) => {
+      handleScrollStart();
+      burgerMenuClose();
+      setTimeout(handleScrollEnd, 100);
+    },
+  };
+
+  // Close menu when route changes
+  useEffect(() => {
+    setIsMenuIconShowing(false);
+  }, [location.pathname]);
+
+  const handleHomeClick = (e) => {
+    e.preventDefault();
+    if (location.pathname === "/") {
+      // If already on home page, scroll to top smoothly
+      scrollToTop();
+    } else {
+      // Navigate to home page
+      navigate("/");
+    }
+  };
+
   return (
-    <nav>
-      <a
-        onClick={() => {
-          console.log("first");
-          navigate("/");
-        }}
-        className="name"
-      >
+    <nav className="navbar-enhanced">
+      <a href="/" onClick={handleHomeClick} className="name">
         Md Nayeem Hossain
       </a>
       {isAllProjectNotShowing && (
@@ -39,67 +100,61 @@ export default function Navbar({ isAllProjectNotShowing }) {
 
           <div className={isMenuIconShowing ? "links active" : "links"}>
             <ScrollLink
-              activeClass="active"
+              {...navLinkProps}
+              className={
+                activeSection === "heroSection" ? "nav-link-active" : "nav-link"
+              }
               to="heroSection"
-              smooth={true}
-              offset={-200}
-              duration={100}
-              onClick={burgerMenuClose}
             >
               Home
             </ScrollLink>
 
             <ScrollLink
-              activeClass="active"
+              {...navLinkProps}
+              className={
+                activeSection === "aboutMe" ? "nav-link-active" : "nav-link"
+              }
               to="aboutMe"
-              smooth={true}
-              offset={isMenuIconShowing ? -100 : -240}
-              duration={100}
-              onClick={burgerMenuClose}
             >
               About
             </ScrollLink>
 
             <ScrollLink
-              activeClass="active"
+              {...navLinkProps}
+              className={
+                activeSection === "experience" ? "nav-link-active" : "nav-link"
+              }
               to="experience"
-              smooth={true}
-              offset={-100}
-              duration={100}
-              onClick={burgerMenuClose}
             >
               Work
             </ScrollLink>
 
             <ScrollLink
-              activeClass="active"
+              {...navLinkProps}
+              className={
+                activeSection === "projects" ? "nav-link-active" : "nav-link"
+              }
               to="projects"
-              smooth={true}
-              offset={-120}
-              duration={100}
-              onClick={burgerMenuClose}
             >
               Projects
             </ScrollLink>
 
             <ScrollLink
-              activeClass="active"
+              {...navLinkProps}
+              className={
+                activeSection === "skills" ? "nav-link-active" : "nav-link"
+              }
               to="skills"
-              smooth={true}
-              offset={-120}
-              duration={100}
-              onClick={burgerMenuClose}
             >
               Skills
             </ScrollLink>
 
             <ScrollLink
-              activeClass="active"
+              {...navLinkProps}
+              className={
+                activeSection === "contact" ? "nav-link-active" : "nav-link"
+              }
               to="contact"
-              smooth={true}
-              offset={-200}
-              duration={100}
-              onClick={burgerMenuClose}
             >
               Contact
             </ScrollLink>

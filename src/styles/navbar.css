@@ -3,10 +3,22 @@ nav{
     justify-content: space-between;
     height: 65px;
     align-items: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 9999;
+    box-sizing: border-box;
+    will-change: auto;
+    transform: translateZ(0);
+}
+
+.navbar-enhanced {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 .name{
     position: relative;
@@ -33,22 +45,74 @@ nav{
     font-size: 1.1rem;
     font-weight: 500;
     color: black;
-    padding: 5px 10px;
-    transition: all 0.3s ease-in;
+    padding: 8px 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: -6rem;
     cursor: pointer;
-    
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
 }
 
-.links a.active{
-    background-color: black;
-    color: white;
-    border-radius: 5px;
+/* Enhanced navigation link styles */
+.nav-link {
+    position: relative;
+    transition: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    padding: 8px 16px;
+    margin-right: -6rem;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    transform: translateZ(0);
 }
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, #6366f1, #8b5cf6);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::before {
+    width: 80%;
+}
+
+.nav-link-active {
+    background: linear-gradient(45deg, #6366f1, #8b5cf6) !important;
+    color: white !important;
+    transform: translateY(-1px) translateZ(0);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-right: -6rem;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: none;
+}
+
+.nav-link-active::before {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
 .links a:hover{
-    background-color: black;
+    background: linear-gradient(45deg, #4f46e5, #7c3aed);
     color: white;
-    border-radius: 5px;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
 @media (max-width: 480px) {
@@ -86,8 +150,10 @@ nav{
         left: 0;
         width: 100%;
         opacity: 1;
-        z-index: -1;
+        z-index: 99;
         transition: 0.3s ease-in-out;
+        position: fixed;
+        top: 0;
     }
 
     .links a{
