@@ -1,70 +1,295 @@
+/* Enhanced Hero Section Styles */
+#heroSection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  position: relative;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  overflow: hidden;
+}
+
+#heroSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
 .heroSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    position: relative;
-    left: 5%;
-    top: 7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
 }
 
+/* Text Content */
 .myInfo {
-    width: 50%;
-    position: relative;
-    left: 8%;
-    bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
 }
 
-.myInfo .firstText {
+.firstText {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #e2e8f0;
+  opacity: 0.9;
+}
+
+.myInfo h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #fff, #e2e8f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.typewriter-container {
+  margin-bottom: 1.5rem;
+}
+
+.secText {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.typewriter-text {
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cbd5e0;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+}
+
+/* Hero Actions */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cta-primary {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+}
+
+.cta-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+}
+
+.cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.cta-download {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+  border: 2px solid rgba(251, 191, 36, 0.3);
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+}
+
+.cta-download:hover {
+  background: rgba(251, 191, 36, 0.25);
+  border-color: rgba(251, 191, 36, 0.5);
+  transform: translateY(-2px);
+}
+
+.cta-icon, .download-icon {
+  font-size: 1.2rem;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  
+}
+
+.social-links a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  padding: 0.2rem 0.3rem;
+  border-radius: 20%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.social-links a:hover {
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.15);
+  transform: translateY(-2px);
+}
+
+.social-icon {
+  font-size: 1.5rem;
+}
+
+/* Hero Visual */
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-container {
+  position: relative;
+  z-index: 2;
+}
+
+.profile-placeholder {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-placeholder::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+.profile-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .heroSection {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .profile-placeholder {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  #heroSection {
+    padding: 0 1rem;
+  }
+  
+  .myInfo h1 {
     font-size: 2.5rem;
-    font-weight: 500;
-    color: gray;
-}
-
-.myInfo h1{
-    font-size: 3rem;
-}
-
-.myInfo .secText{
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.myInfo .icons {
-    position: relative;
-    top: 20px;
-}
-
-.myInfo .icons a{
-    color: unset;
-}
-
-.infoSnippet {
-    width: 50%;
-    height: 550px;
-    background-image: url(../assets/CodeSnippet.png);
-    background-size: cover;
-    position: relative;
-    top: 10px;
+  }
+  
+  .secText {
+    font-size: 1.25rem;
+  }
+  
+  .hero-actions {
+    justify-content: center;
+  }
+  
+  .profile-placeholder {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 @media (max-width: 480px) {
-    .infoSnippet{
-        visibility: hidden;
-        position: absolute;
-    }
-
-    .myInfo{
-        width: 97.5%;
-        margin-top: 8%;
-    }
-    
-    
-    .myInfo .secText{
-        /* margin-bottom: 50%; */
-        height: 110px;
-        width: 90%;
-    }
-    
-    
+  .myInfo h1 {
+    font-size: 2rem;
+  }
+  
+  .secText {
+    font-size: 1.1rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-primary,
+  .cta-secondary,
+  .cta-download {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+  }
 }

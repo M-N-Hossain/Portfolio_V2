@@ -8,16 +8,16 @@ import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import useScrollRestoration from "../hooks/useScrollRestoration ";
 
-export default function Home({ handleProjectShowing }) {
+export default function Home() {
   useScrollRestoration(`scrollPosition-${window.location.pathname}`);
 
   return (
     <div>
-      <Navbar isAllProjectNotShowing={true} />
+      <Navbar />
       <Hero />
       <AboutME />
       <Experience />
-      <Projects handleProjectShowing={handleProjectShowing} />
+      <Projects />
       <Skills />
       <Education />
     </div>
