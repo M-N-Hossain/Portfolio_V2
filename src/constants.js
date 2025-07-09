@@ -415,7 +415,7 @@ Key technical implementations include geolocation services for automatic locatio
     source_code_link: "https://github.com/M-N-Hossain/Documentation",
     type: "web",
     category: "backend",
-    featured: true,
+    featured: false,
     dateCompleted: "2024-07",
   },
   {
@@ -648,8 +648,8 @@ Key architectural decisions include component-based frontend architecture, secur
 
 // Featured projects for homepage showcase
 const featuredProjects = {
-  web: projects.filter((p) => p.type === "web" && p.featured).slice(0, 3),
-  mobile: projects.filter((p) => p.type === "mobile" && p.featured).slice(0, 3),
+  web: projects.filter((p) => p.type === "web" && p.featured).slice(0, 4),
+  mobile: projects.filter((p) => p.type === "mobile" && p.featured).slice(0, 4),
 };
 
 const education = [
