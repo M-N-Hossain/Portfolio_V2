@@ -105,7 +105,7 @@ export default function Hero() {
             </button>
 
             <a
-              href="/resume.pdf"
+              href="/CV.pdf"
               className="cta-download"
               target="_blank"
               rel="noopener noreferrer"
