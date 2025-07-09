@@ -4,9 +4,10 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import MapIcon from "@mui/icons-material/Map";
 import MailIcon from "@mui/icons-material/Mail";
 
-export default function Contact() {
+export default function Contact({isHomepage = false}) {
+  const id = isHomepage ? "contact" : "project-contact";
   return (
-    <div className="contact" id="contact">
+    <div className="contact" id={id}>
       <p className="firstText">CONTACT.</p>
       <h2>Don't be shy! Hit me up!</h2>
       <ArrowDownwardIcon className="arrow" />

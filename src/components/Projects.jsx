@@ -1,72 +1,106 @@
-import React from "react";
+import { motion } from "framer-motion";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { projects } from "../constants";
+import { featuredProjects } from "../constants";
 import "../styles/projects.css";
-import Project from "./Project";
+import ProjectCard from "./ProjectCard";
 
-export default function Projects({ isProjectShowing, handleProjectShowing }) {
-  function handleClick() {
-    console.log("first");
-  }
-  function selectProjects(index) {
-    switch (index) {
-      case 0:
-        return "Frontend";
-      case 1:
-        return "Backend";
-      case 2:
-        return "Full-Stack";
-      default:
-        break;
-    }
-  }
+export default function Projects() {
+  const [activeCategory, setActiveCategory] = useState("web");
 
-  const filteredProjects = projects.filter((project) => {
-    if (
-      project.name.toLocaleLowerCase() ===
-      "LWS Kitchen – Food Blog & Recipe Platform".toLocaleLowerCase()
-    ) {
-      return project;
-    } else if (
-      project.name.toLocaleLowerCase() ===
-      "Uptime Monitoring API".toLocaleLowerCase()
-    ) {
-      return project;
-    } else if (
-      project.name.toLocaleLowerCase() === "Grocery Shop".toLocaleLowerCase()
-    ) {
-      return project;
-    } else {
-      return false;
-    }
-  });
+  const categoryVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const projectVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   return (
-    <div className="projects" id="projects">
-      <p className="firstText">PROJECTS.</p>
-      <p className="secText">Each project is a unique piece of development.</p>
+    <div className="projects-showcase" id="projects">
+      <motion.div
+        className="projects-header"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <h2 className="section-title">Featured Projects</h2>
+        <p className="section-subtitle">
+          Showcase of my best work in web and mobile development
+        </p>
+      </motion.div>
 
-      {filteredProjects.map((project, index) => {
-        const category = selectProjects(index);
-        return (
-          <React.Fragment key={index}>
-            <Project
-              project={project}
-              className={index % 2 === 0 ? "project" : "projectReverse"}
-            />
-            <span style={{ fontWeight: "bold", marginTop: "12px" }}>
-              For more {category} projects, &nbsp;
-              <Link
-                to="/projects"
-                style={{ color: "blue", cursor: "pointer" }}
-                onClick={() => handleProjectShowing(category)}
-              >
-                click here
-              </Link>
-            </span>
-          </React.Fragment>
-        );
-      })}
+      <motion.div
+        className="category-filter"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+      >
+        <button
+          className={`filter-btn ${activeCategory === "web" ? "active" : ""}`}
+          onClick={() => setActiveCategory("web")}
+        >
+          <span className="filter-icon">🌐</span>
+          Web Applications
+          <span className="project-count">({featuredProjects.web.length})</span>
+        </button>
+        <button
+          className={`filter-btn ${
+            activeCategory === "mobile" ? "active" : ""
+          }`}
+          onClick={() => setActiveCategory("mobile")}
+        >
+          <span className="filter-icon">📱</span>
+          Mobile Apps
+          <span className="project-count">
+            ({featuredProjects.mobile.length})
+          </span>
+        </button>
+      </motion.div>
+
+      <motion.div
+        className="projects-grid"
+        variants={categoryVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        key={activeCategory}
+      >
+        {featuredProjects[activeCategory].map((project, index) => (
+          <motion.div
+            key={project.id}
+            variants={projectVariants}
+            className="project-card-container"
+          >
+            <ProjectCard project={project} index={index} isHomepage={true} />
+          </motion.div>
+        ))}
+      </motion.div>
+
+      <motion.div
+        className="projects-cta"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.4, duration: 0.6 }}
+      >
+        <p className="cta-text">Interested in seeing more of my work?</p>
+        <Link to="/projects" className="cta-button">
+          View All Projects
+          <span className="cta-arrow">→</span>
+        </Link>
+      </motion.div>
     </div>
   );
 }
