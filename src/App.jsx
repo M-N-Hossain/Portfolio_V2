@@ -71,7 +71,7 @@ function App() {
               <Route
                 path="/project/:projectId"
                 element={
-                  <Layout>
+                  <Layout isHomepage={false}>
                     <ProjectDetail />
                   </Layout>
                 }

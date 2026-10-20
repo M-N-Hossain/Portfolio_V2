@@ -690,7 +690,7 @@ const personalInfo = {
   social: {
     github: "https://github.com/M-N-Hossain",
     linkedin: "https://www.linkedin.com/in/md-nayeem-hossain-86702921b/",
-    email: "nayeem@example.com", // Replace with actual email
+    email: "nayeemhossain859@gmail.com",
   },
 };
 

@@ -112,6 +112,9 @@ export default function Navbar() {
               >
                 Contact
               </ScrollLink>
+               <Link to="/projects" className="nav-cta" onClick={closeMenu}>
+            View Work
+          </Link>
             </>
           ) : (
             // Other pages navigation with regular links
@@ -150,9 +153,9 @@ export default function Navbar() {
             </>
           )}
 
-          <Link to="/projects" className="nav-cta" onClick={closeMenu}>
+          {/* <Link to="/projects" className="nav-cta" onClick={closeMenu}>
             View Work
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>
